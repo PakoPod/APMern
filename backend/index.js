@@ -117,9 +117,14 @@ import { Server } from 'socket.io'
 const io = new Server(servidor, {
     pingTimeout: 60000,
     cors: {
-        origin: process.env.FRONTEND_URL,
-    }
-})
+        origin: [
+          process.env.FRONTEND_URL,
+          'http://localhost:5173',
+          'https://ap-mern-ma6pi0u9k-francisco-ortegas-projects.vercel.app',
+          'https://ap-mern-git-main-francisco-ortegas-projects.vercel.app'
+        ]
+      }
+    });
 
 io.on("connection", (socket) => {
     console.log("Conectado desde socket.io");
