@@ -55,6 +55,7 @@ const whitelist = [process.env.FRONTEND_URL, 'http://localhost:5173'];
 //         }
 //     }
 // };
+
 const corsOptions = {
     origin: function (origin, callback) {
       console.log(`Origin received: ${origin}`); // Esto te mostrará el origen exacto que se está comprobando.
