@@ -35,7 +35,11 @@ conectarDB();
 // Regla en la que se asignan las variables de entorno en NodeJS usando process.env
 
 // const whitelist = ['http://localhost:5173'];
-const whitelist = [process.env.FRONTEND_URL, 'http://localhost:5173'];
+const whitelist = [process.env.FRONTEND_URL, 
+    'http://localhost:5173',
+    'http://localhost:5173',
+    'https://ap-mern-ma6pi0u9k-francisco-ortegas-projects.vercel.app',
+    'https://ap-mern-git-main-francisco-ortegas-projects.vercel.app'];
 
 // const whitelist = [process.env.FRONTEND_URL || 'http://localhost:5173'];
 
