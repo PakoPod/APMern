@@ -1,6 +1,6 @@
 // MODEL Usuario
 import mongoose from "mongoose";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs"; // Cambiado a bcryptjs
 
 // Definicion Schemma - estructura de una base de datos
 const usuarioSchema = mongoose.Schema({
